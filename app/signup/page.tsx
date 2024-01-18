@@ -3,11 +3,7 @@ import { FaRegUser, FaRegEnvelope } from "react-icons/fa6";
 import {MdLockOutline} from 'react-icons/md'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-useEffect(() => {
-   // other code
-   ...
- 
-   // eslint-disable-next-line react-hooks/exhaustive-deps
+
 
 
 export default function signup(){
@@ -15,7 +11,7 @@ export default function signup(){
     const [lastname, setLastname] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
+useEffect(() => { 
     function signup(){
         let payload = {
             firstname : firstname,
@@ -66,4 +62,5 @@ return(
  
 )
 }
+          // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []) 
