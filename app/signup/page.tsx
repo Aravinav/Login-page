@@ -3,6 +3,11 @@ import { FaRegUser, FaRegEnvelope } from "react-icons/fa6";
 import {MdLockOutline} from 'react-icons/md'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+useEffect(() => {
+   // other code
+   ...
+ 
+   // eslint-disable-next-line react-hooks/exhaustive-deps
 
 
 export default function signup(){
@@ -61,3 +66,4 @@ return(
  
 )
 }
+    }, []) 
